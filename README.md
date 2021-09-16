@@ -7,6 +7,18 @@ Finds tweets within a given radius of a specified geo-location.
 
 The `geocode` parameter can be of the format `"lat,lon,radius+mi|km"`
 
+Options:
+```
+  -consumer-key string
+    	Twitter Consumer Key
+  -consumer-secret string
+    	Twitter Consumer Secret
+  -count int
+    	max num of results (default 1000)
+  -geocode string
+    	lat,lon,accuracy
+```
+
 ## Install
 
 You need to have [Go installed](https://golang.org/doc/install) and configured (i.e. with $GOPATH/bin in your $PATH):
@@ -17,9 +29,10 @@ You need to have [Go installed](https://golang.org/doc/install) and configured (
 
 You need to have [Twitter API keys](https://developer.twitter.com/en/portal/dashboard) saved as environment variables.  
 
-`export TWITTER_CONSUMER_KEY=your-key`
-
-`export TWITTER_CONSUMER_SECRET=your-secret`
+```
+export TWITTER_CONSUMER_KEY=your-key
+export TWITTER_CONSUMER_SECRET=your-secret
+```
 
 To make these persist, add them to your `~/.bashrc` file
 
