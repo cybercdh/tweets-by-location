@@ -1,4 +1,4 @@
-module tweets-by-location
+module github.com/cybercdh/tweets-by-location
 
 go 1.15
 
