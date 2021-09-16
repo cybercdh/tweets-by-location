@@ -3,7 +3,7 @@ Finds tweets within a given radius of a specified geo-location.
 
 ## Recommended Usage
 
-`$ tweets-by-location -geocode "50.1234,-1.2345,10km`
+`$ tweets-by-location -geocode "50.1234,-1.2345,10km"`
 
 The `geocode` parameter can be of the format `"lat,lon,radius+mi|km"`
 
