@@ -18,6 +18,7 @@ You need to have [Go installed](https://golang.org/doc/install) and configured (
 You need to have a Twitter API keys saved as environment variables.  
 
 `export TWITTER_CONSUMER_KEY=your-key`
+
 `export TWITTER_CONSUMER_SECRET=your-secret`
 
 To make these persist, add them to your `~/.bashrc` file
