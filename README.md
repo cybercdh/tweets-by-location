@@ -15,7 +15,7 @@ You need to have [Go installed](https://golang.org/doc/install) and configured (
 
 ## Configuration
 
-You need to have a Twitter API keys saved as environment variables.  
+You need to have a [Twitter API keys](https://developer.twitter.com/en/portal/dashboard) saved as environment variables.  
 
 `export TWITTER_CONSUMER_KEY=your-key`
 
