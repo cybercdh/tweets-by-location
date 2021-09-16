@@ -21,11 +21,13 @@ func main() {
 		consumerKey    string
 		consumerSecret string
 		geocode        string
+		count          int
 	}{}
 
 	flag.StringVar(&flags.consumerKey, "consumer-key", "", "Twitter Consumer Key")
 	flag.StringVar(&flags.consumerSecret, "consumer-secret", "", "Twitter Consumer Secret")
 	flag.StringVar(&flags.geocode, "geocode", "", "lat,lon,accuracy")
+	flag.IntVar(&flags.count, "count", 1000, "max num of results")
 	flag.Parse()
 	flagutil.SetFlagsFromEnv(flag.CommandLine, "TWITTER")
 
@@ -63,6 +65,7 @@ func main() {
 	// search tweets
 	searchTweetParams := &twitter.SearchTweetParams{
 		Geocode:   flags.geocode,
+		Count:     flags.count,
 		TweetMode: "extended",
 	}
 
